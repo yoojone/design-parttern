@@ -1,4 +1,4 @@
-package com.yoojone.design.parttern.factory;
+package com.yoojone.design.parttern.factory.simple;
 
 /**
  * @author yuqiang.zhang

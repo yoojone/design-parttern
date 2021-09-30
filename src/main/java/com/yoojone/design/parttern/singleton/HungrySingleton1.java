@@ -10,8 +10,7 @@ package com.yoojone.design.parttern.singleton;
  * 配置文件的数据读取到类中，这个类的实例 只保存一份就可以，
  * 这时就可以使用 单例模式
  */
-public class Singleton1
-{
+public class HungrySingleton1 {
 
     /**
      * 饿汉式
@@ -19,13 +18,13 @@ public class Singleton1
      * static : 类的静态变量
      * final ： 变量的引用 第一次初始化赋予之后，就再也不能修改引用了
      */
-    private static Singleton1 singleton = new Singleton1();
+    private static HungrySingleton1 singleton = new HungrySingleton1();
 
     /**
      * 私有构造方法
      * 第二步: 除了这个类自己本身，其他任何人都不能创建他的实例对象
      */
-    private Singleton1() {
+    private HungrySingleton1() {
 
     }
 
@@ -34,7 +33,7 @@ public class Singleton1
      * 第三步:
      * @return
      */
-    public static Singleton1 getInstance() {
+    public static HungrySingleton1 getInstance() {
         return singleton;
     }
 
@@ -43,7 +42,7 @@ public class Singleton1
     }
 
     public static void main(String[] args) {
-        Singleton1 singleton1 = Singleton1.getInstance();
+        HungrySingleton1 singleton1 = HungrySingleton1.getInstance();
 
         singleton1.execute();
     }

@@ -4,7 +4,8 @@ package com.yoojone.design.parttern.builder;
  * @author yoojone
  * @date 2021/8/13
  * description: 人员信息
- * 建造者/构造器模式，可以直接使用lombok 的@Builder注解
+ * 建造者/
+ * 构造器模式，可以直接使用lombok 的@Builder注解
  */
 public class PersonInfo {
 

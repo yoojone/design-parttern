@@ -16,8 +16,8 @@ public class NonFactoryPattern2 {
         Product p3 = Product3Factory.create();
 
         p1.execute();
-        p1.execute();
-        p1.execute();
+        p2.execute();
+        p3.execute();
     }
 
     /**

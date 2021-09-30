@@ -1,0 +1,15 @@
+feign:
+  client:
+    config:
+      ServiceA: #专门针对服务ServiceA 的配置
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+        decode404: false
+feign:
+  client:
+    config:
+      default: #对所有服务的配置
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
